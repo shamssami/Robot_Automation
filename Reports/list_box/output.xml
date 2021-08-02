@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210802 13:34:41.141" rpa="false" schemaversion="2">
+<suite id="s1" name="List Box" source="C:\Users\Microsoft\PycharmProjects\RobotAutomationTesting\Test\TestSuite\list_box.robot">
+<test id="s1-t1" name="TestCase1: Test List Box">
+<kw name="Open List Box Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210802 13:34:41.797" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210802 13:34:41.797" endtime="20210802 13:34:41.797"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${list_box_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210802 13:34:41.797" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/jquery-dual-list-box-demo.html'.</msg>
+<status status="PASS" starttime="20210802 13:34:41.797" endtime="20210802 13:34:45.878"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210802 13:34:45.878" endtime="20210802 13:34:46.032"/>
+</kw>
+<status status="PASS" starttime="20210802 13:34:41.797" endtime="20210802 13:34:46.032"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 13:34:48.033" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 13:34:46.032" endtime="20210802 13:34:48.034"/>
+</kw>
+<kw name="Pick List1" library="Keywords">
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list1_selections}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:48.037" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[1]/select' by index 2.</msg>
+<status status="PASS" starttime="20210802 13:34:48.036" endtime="20210802 13:34:48.369"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${add_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:48.370" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[1]'.</msg>
+<status status="PASS" starttime="20210802 13:34:48.369" endtime="20210802 13:34:48.781"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list1_selections}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:48.782" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[1]/select' by index 3.</msg>
+<status status="PASS" starttime="20210802 13:34:48.781" endtime="20210802 13:34:48.962"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list1_selections}</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:48.963" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[1]/select' by index 4.</msg>
+<status status="PASS" starttime="20210802 13:34:48.962" endtime="20210802 13:34:49.171"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list1_selections}</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:49.173" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[1]/select' by index 5.</msg>
+<status status="PASS" starttime="20210802 13:34:49.172" endtime="20210802 13:34:49.334"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${add_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:49.335" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[1]'.</msg>
+<status status="PASS" starttime="20210802 13:34:49.334" endtime="20210802 13:34:49.382"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 13:34:51.383" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 13:34:49.383" endtime="20210802 13:34:51.383"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${remove_all_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:51.383" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[4]'.</msg>
+<status status="PASS" starttime="20210802 13:34:51.383" endtime="20210802 13:34:51.535"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${add_all_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:51.537" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20210802 13:34:51.536" endtime="20210802 13:34:51.640"/>
+</kw>
+<status status="PASS" starttime="20210802 13:34:48.035" endtime="20210802 13:34:51.641"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 13:34:53.651" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 13:34:51.641" endtime="20210802 13:34:53.651"/>
+</kw>
+<kw name="Pick List2" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${add_all_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:53.651" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20210802 13:34:53.651" endtime="20210802 13:34:53.690"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list2_selections}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:53.692" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[3]/select' by index 2.</msg>
+<status status="PASS" starttime="20210802 13:34:53.691" endtime="20210802 13:34:53.912"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${remove_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:53.913" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[3]'.</msg>
+<status status="PASS" starttime="20210802 13:34:53.913" endtime="20210802 13:34:54.055"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list2_selections}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:54.057" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[3]/select' by index 1.</msg>
+<status status="PASS" starttime="20210802 13:34:54.056" endtime="20210802 13:34:54.215"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list2_selections}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:54.216" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[3]/select' by index 2.</msg>
+<status status="PASS" starttime="20210802 13:34:54.215" endtime="20210802 13:34:54.354"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${list2_selections}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 13:34:54.355" level="INFO">Selecting options from selection list 'xpath://*[@id="pickList"]/div/div[3]/select' by index 3.</msg>
+<status status="PASS" starttime="20210802 13:34:54.354" endtime="20210802 13:34:54.490"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 13:34:56.496" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 13:34:54.490" endtime="20210802 13:34:56.496"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${remove_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 13:34:56.496" level="INFO">Clicking element 'xpath://*[@id="pickList"]/div/div[2]/button[3]'.</msg>
+<status status="PASS" starttime="20210802 13:34:56.496" endtime="20210802 13:34:56.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 13:34:58.553" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 13:34:56.544" endtime="20210802 13:34:58.554"/>
+</kw>
+<status status="PASS" starttime="20210802 13:34:53.651" endtime="20210802 13:34:58.555"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 13:35:01.556" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210802 13:34:58.556" endtime="20210802 13:35:01.556"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210802 13:35:01.556" endtime="20210802 13:35:04.619"/>
+</kw>
+<doc>This is to verify list box</doc>
+<tag>box</tag>
+<status status="PASS" starttime="20210802 13:34:41.797" endtime="20210802 13:35:04.619"/>
+</test>
+<doc>Testing List Box Website</doc>
+<status status="PASS" starttime="20210802 13:34:41.141" endtime="20210802 13:35:04.619"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">box</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="List Box">List Box</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

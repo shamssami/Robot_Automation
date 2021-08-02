@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210723 21:06:52.885" rpa="false" schemaversion="2">
+<suite id="s1" name="Basic Form" source="C:\Users\Microsoft\PycharmProjects\MyTry\Test\TestSuite\basic_form.robot">
+<test id="s1-t1" name="TestCase1: Calculate Valid Inputs">
+<kw name="Open basic-form Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210723 21:06:53.369" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210723 21:06:53.369" endtime="20210723 21:06:53.369"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${form_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210723 21:06:53.370" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/basic-first-form-demo.html'.</msg>
+<status status="PASS" starttime="20210723 21:06:53.369" endtime="20210723 21:06:59.177"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210723 21:06:59.177" endtime="20210723 21:06:59.321"/>
+</kw>
+<status status="PASS" starttime="20210723 21:06:53.368" endtime="20210723 21:06:59.322"/>
+</kw>
+<kw name="Input valid inputs to calculte" library="Keywords">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${number1_field}</arg>
+<arg>${valid_number1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210723 21:06:59.323" level="INFO">Typing text '1' into text field 'xpath://*[@id="sum1"]'.</msg>
+<status status="PASS" starttime="20210723 21:06:59.323" endtime="20210723 21:07:00.173"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${number2_field}</arg>
+<arg>${valid_number2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210723 21:07:00.174" level="INFO">Typing text '2' into text field 'xpath://*[@id="sum2"]'.</msg>
+<status status="PASS" starttime="20210723 21:07:00.173" endtime="20210723 21:07:00.477"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${total_field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210723 21:07:00.478" level="INFO">Clicking element 'xpath://*[@id="gettotal"]/button'.</msg>
+<status status="PASS" starttime="20210723 21:07:00.477" endtime="20210723 21:07:01.167"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210723 21:07:03.169" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210723 21:07:01.167" endtime="20210723 21:07:03.169"/>
+</kw>
+<status status="PASS" starttime="20210723 21:06:59.322" endtime="20210723 21:07:03.170"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210723 21:07:03.171" endtime="20210723 21:07:07.296"/>
+</kw>
+<doc>This is to verify invalid login Mercury Tours Home Page</doc>
+<tag>valid-sum</tag>
+<status status="PASS" starttime="20210723 21:06:53.367" endtime="20210723 21:07:07.297"/>
+</test>
+<test id="s1-t2" name="TestCase2: Calculate InValid Inputs">
+<kw name="Open basic-form Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210723 21:07:07.302" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210723 21:07:07.302" endtime="20210723 21:07:07.302"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${form_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210723 21:07:07.303" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/basic-first-form-demo.html'.</msg>
+<status status="PASS" starttime="20210723 21:07:07.302" endtime="20210723 21:07:14.021"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210723 21:07:14.021" endtime="20210723 21:07:14.154"/>
+</kw>
+<status status="PASS" starttime="20210723 21:07:07.301" endtime="20210723 21:07:14.154"/>
+</kw>
+<kw name="Input invalid inputs to calculte" library="Keywords">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${number1_field}</arg>
+<arg>${valid_number1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210723 21:07:14.157" level="INFO">Typing text '1' into text field 'xpath://*[@id="sum1"]'.</msg>
+<status status="PASS" starttime="20210723 21:07:14.156" endtime="20210723 21:07:14.484"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${number2_field}</arg>
+<arg>${invalid_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210723 21:07:14.485" level="INFO">Typing text 'a' into text field 'xpath://*[@id="sum2"]'.</msg>
+<status status="PASS" starttime="20210723 21:07:14.485" endtime="20210723 21:07:14.719"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${total_field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210723 21:07:14.720" level="INFO">Clicking element 'xpath://*[@id="gettotal"]/button'.</msg>
+<status status="PASS" starttime="20210723 21:07:14.719" endtime="20210723 21:07:15.689"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210723 21:07:19.694" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210723 21:07:15.689" endtime="20210723 21:07:19.695"/>
+</kw>
+<status status="PASS" starttime="20210723 21:07:14.155" endtime="20210723 21:07:19.695"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210723 21:07:19.700" endtime="20210723 21:07:21.995"/>
+</kw>
+<doc>This is to verify invalid login Mercury Tours Home Page</doc>
+<tag>invalid-sum</tag>
+<status status="PASS" starttime="20210723 21:07:07.300" endtime="20210723 21:07:21.995"/>
+</test>
+<doc>Testing MercuryTours Website</doc>
+<status status="PASS" starttime="20210723 21:06:52.887" endtime="20210723 21:07:21.995"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">invalid-sum</stat>
+<stat pass="1" fail="0" skip="0">valid-sum</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Basic Form">Basic Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

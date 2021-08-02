@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210802 14:49:43.921" rpa="false" schemaversion="2">
+<suite id="s1" name="Progress Bars" source="C:\Users\Microsoft\PycharmProjects\RobotAutomationTesting\Test\TestSuite\progress_bars.robot">
+<test id="s1-t1" name="TestCase1: Test Jquery Progress Bar">
+<kw name="Open Jquery Progress Url Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210802 14:49:44.551" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210802 14:49:44.551" endtime="20210802 14:49:44.551"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${jquery_progress_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210802 14:49:44.552" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/jquery-download-progress-bar-demo.html'.</msg>
+<status status="PASS" starttime="20210802 14:49:44.551" endtime="20210802 14:49:49.789"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210802 14:49:49.790" endtime="20210802 14:49:49.931"/>
+</kw>
+<status status="PASS" starttime="20210802 14:49:44.550" endtime="20210802 14:49:49.932"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 14:49:52.935" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210802 14:49:49.932" endtime="20210802 14:49:52.936"/>
+</kw>
+<kw name="Test Jquery Progress Bar" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${download_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 14:49:52.942" level="INFO">Clicking element 'xpath://*[@id="downloadButton"]'.</msg>
+<status status="PASS" starttime="20210802 14:49:52.939" endtime="20210802 14:49:55.076"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 14:50:00.097" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210802 14:49:55.076" endtime="20210802 14:50:00.097"/>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${progress_label}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210802 14:50:00.202" level="INFO">Element 'xpath://*[@id="dialog"]/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20210802 14:50:00.098" endtime="20210802 14:50:00.202"/>
+</kw>
+<status status="PASS" starttime="20210802 14:49:52.937" endtime="20210802 14:50:00.202"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 14:50:02.209" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 14:50:00.204" endtime="20210802 14:50:02.209"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210802 14:50:02.211" endtime="20210802 14:50:06.490"/>
+</kw>
+<doc>This is to test Jquery Progress Bar</doc>
+<tag>Jprogress</tag>
+<status status="PASS" starttime="20210802 14:49:44.549" endtime="20210802 14:50:06.491"/>
+</test>
+<test id="s1-t2" name="TestCase2: Test Bootstrap Progress Bar">
+<kw name="Open Bootstrap Progress Bar Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210802 14:50:06.495" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210802 14:50:06.495" endtime="20210802 14:50:06.495"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${bootstrap_progress_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210802 14:50:06.496" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/bootstrap-download-progress-demo.html'.</msg>
+<status status="PASS" starttime="20210802 14:50:06.495" endtime="20210802 14:50:10.171"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210802 14:50:10.172" endtime="20210802 14:50:10.313"/>
+</kw>
+<status status="PASS" starttime="20210802 14:50:06.494" endtime="20210802 14:50:10.313"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 14:50:13.328" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210802 14:50:10.314" endtime="20210802 14:50:13.329"/>
+</kw>
+<kw name="Test Bootstrap Progress Bar" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${circle_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 14:50:13.348" level="INFO">Clicking element 'xpath://*[@id="cricle-btn"]'.</msg>
+<status status="PASS" starttime="20210802 14:50:13.347" endtime="20210802 14:50:13.874"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 14:50:18.888" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210802 14:50:13.874" endtime="20210802 14:50:18.888"/>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${percent_field}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210802 14:50:18.993" level="INFO">Element 'xpath://*[@id="circle"]/div/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20210802 14:50:18.888" endtime="20210802 14:50:18.993"/>
+</kw>
+<status status="PASS" starttime="20210802 14:50:13.341" endtime="20210802 14:50:18.993"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 14:50:20.997" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 14:50:18.994" endtime="20210802 14:50:20.997"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210802 14:50:21.002" endtime="20210802 14:50:24.911"/>
+</kw>
+<doc>This is to test Bootstrap Progress Bar</doc>
+<tag>Bprogress</tag>
+<status status="PASS" starttime="20210802 14:50:06.493" endtime="20210802 14:50:24.912"/>
+</test>
+<doc>Testing Progress Bars</doc>
+<status status="PASS" starttime="20210802 14:49:43.921" endtime="20210802 14:50:24.915"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Bprogress</stat>
+<stat pass="1" fail="0" skip="0">Jprogress</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Progress Bars">Progress Bars</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

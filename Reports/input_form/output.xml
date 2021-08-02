@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210802 00:01:43.259" rpa="false" schemaversion="2">
+<suite id="s1" name="Input Form" source="C:\Users\Microsoft\PycharmProjects\RobotAutomationTesting\Test\TestSuite\input_form.robot">
+<test id="s1-t1" name="TestCase1: Test Form Inputs">
+<kw name="Open Input Form Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210802 00:01:43.908" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210802 00:01:43.908" endtime="20210802 00:01:43.908"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${input_form_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210802 00:01:43.908" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/input-form-demo.html'.</msg>
+<status status="PASS" starttime="20210802 00:01:43.908" endtime="20210802 00:01:51.669"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210802 00:01:51.670" endtime="20210802 00:01:51.804"/>
+</kw>
+<status status="PASS" starttime="20210802 00:01:43.908" endtime="20210802 00:01:51.804"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:01:53.813" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:01:51.804" endtime="20210802 00:01:53.813"/>
+</kw>
+<kw name="Input Info In the Form" library="Keywords">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${first_name}</arg>
+<arg>${f_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:53.813" level="INFO">Typing text 'Shams' into text field 'xpath://*[@id="contact_form"]/fieldset/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:53.813" endtime="20210802 00:01:54.356"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${last_name}</arg>
+<arg>${l_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:54.357" level="INFO">Typing text 'Salman' into text field 'xpath://*[@id="contact_form"]/fieldset/div[2]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:54.356" endtime="20210802 00:01:54.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${my_email}</arg>
+<arg>${text_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:54.910" level="INFO">Typing text 'shams@gmail.com' into text field 'xpath://*[@id="contact_form"]/fieldset/div[3]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:54.909" endtime="20210802 00:01:55.579"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${my_phone}</arg>
+<arg>${my_no}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:55.581" level="INFO">Typing text '9874563210' into text field 'xpath://*[@id="contact_form"]/fieldset/div[4]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:55.580" endtime="20210802 00:01:55.997"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${address}</arg>
+<arg>${address_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:55.998" level="INFO">Typing text 'Bethlehem' into text field 'xpath://*[@id="contact_form"]/fieldset/div[5]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:55.997" endtime="20210802 00:01:56.477"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${city}</arg>
+<arg>${city_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:56.478" level="INFO">Typing text 'Bethlehem' into text field 'xpath://*[@id="contact_form"]/fieldset/div[6]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:56.477" endtime="20210802 00:01:56.872"/>
+</kw>
+<kw name="Select From List By Index" library="Selenium2Library">
+<arg>${state}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20210802 00:01:56.873" level="INFO">Selecting options from selection list 'xpath://*[@id="contact_form"]/fieldset/div[7]/div/div/select' by index 2.</msg>
+<status status="PASS" starttime="20210802 00:01:56.872" endtime="20210802 00:01:57.699"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${zip_code}</arg>
+<arg>${zip_code_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:57.701" level="INFO">Typing text '99508' into text field 'xpath://*[@id="contact_form"]/fieldset/div[8]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:57.700" endtime="20210802 00:01:58.092"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${website_domain_name}</arg>
+<arg>${domain_name_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:58.093" level="INFO">Typing text 'sun.com' into text field 'xpath://*[@id="contact_form"]/fieldset/div[9]/div/div/input'.</msg>
+<status status="PASS" starttime="20210802 00:01:58.092" endtime="20210802 00:01:58.363"/>
+</kw>
+<kw name="Radio Button Should Not Be Selected" library="Selenium2Library">
+<arg>${radio_button_name}</arg>
+<doc>Verifies radio button group ``group_name`` has no selection.</doc>
+<msg timestamp="20210802 00:01:58.365" level="INFO">Verifying radio button 'hosting' has no selection.</msg>
+<status status="PASS" starttime="20210802 00:01:58.364" endtime="20210802 00:01:58.439"/>
+</kw>
+<kw name="Select Radio Button" library="Selenium2Library">
+<arg>${radio_button_name}</arg>
+<arg>${radio_button_value}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20210802 00:01:58.439" level="INFO">Selecting 'yes' from radio button 'hosting'.</msg>
+<status status="PASS" starttime="20210802 00:01:58.439" endtime="20210802 00:01:58.796"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${description}</arg>
+<arg>${description_value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:58.798" level="INFO">Typing text 'Hello World, I am here!' into text field 'xpath://*[@id="contact_form"]/fieldset/div[11]/div/div/textarea'.</msg>
+<status status="PASS" starttime="20210802 00:01:58.797" endtime="20210802 00:01:59.445"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${send_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210802 00:01:59.446" level="INFO">Clicking element 'xpath://*[@id="contact_form"]/fieldset/div[13]/div/button'.</msg>
+<status status="PASS" starttime="20210802 00:01:59.446" endtime="20210802 00:01:59.651"/>
+</kw>
+<status status="PASS" starttime="20210802 00:01:53.813" endtime="20210802 00:01:59.652"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:02:02.662" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210802 00:01:59.654" endtime="20210802 00:02:02.662"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210802 00:02:02.662" endtime="20210802 00:02:07.884"/>
+</kw>
+<doc>This is to verify form inputs</doc>
+<tag>form</tag>
+<status status="PASS" starttime="20210802 00:01:43.908" endtime="20210802 00:02:07.884"/>
+</test>
+<doc>Testing Input Form Website</doc>
+<status status="PASS" starttime="20210802 00:01:43.259" endtime="20210802 00:02:07.884"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">form</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Input Form">Input Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

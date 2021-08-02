@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210802 00:19:06.574" rpa="false" schemaversion="2">
+<suite id="s1" name="List Filter" source="C:\Users\Microsoft\PycharmProjects\RobotAutomationTesting\Test\TestSuite\list_filter.robot">
+<test id="s1-t1" name="TestCase1: Test List Filter">
+<kw name="Open List Filter Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210802 00:19:07.013" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210802 00:19:07.013" endtime="20210802 00:19:07.013"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${list_filter_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210802 00:19:07.014" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/data-list-filter-demo.html'.</msg>
+<status status="PASS" starttime="20210802 00:19:07.013" endtime="20210802 00:19:13.459"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210802 00:19:13.459" endtime="20210802 00:19:13.635"/>
+</kw>
+<status status="PASS" starttime="20210802 00:19:07.012" endtime="20210802 00:19:13.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:15.643" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:13.636" endtime="20210802 00:19:15.643"/>
+</kw>
+<kw name="Input To Test Search" library="Keywords">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<arg>${filter_by_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:19:15.646" level="INFO">Typing text 'Manager' into text field 'xpath://*[@id="input-search"]'.</msg>
+<status status="PASS" starttime="20210802 00:19:15.645" endtime="20210802 00:19:16.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:18.622" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:16.615" endtime="20210802 00:19:18.622"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210802 00:19:18.622" endtime="20210802 00:19:18.665"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<arg>${filter_by_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:19:18.666" level="INFO">Typing text 'test4@company.com' into text field 'xpath://*[@id="input-search"]'.</msg>
+<status status="PASS" starttime="20210802 00:19:18.665" endtime="20210802 00:19:18.829"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:20.844" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:18.829" endtime="20210802 00:19:20.844"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210802 00:19:20.845" endtime="20210802 00:19:20.910"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<arg>${filter_by_phone_no}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:19:20.910" level="INFO">Typing text '321-456-1111' into text field 'xpath://*[@id="input-search"]'.</msg>
+<status status="PASS" starttime="20210802 00:19:20.910" endtime="20210802 00:19:21.031"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:23.041" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:21.032" endtime="20210802 00:19:23.041"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210802 00:19:23.041" endtime="20210802 00:19:23.086"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<arg>${filter_by_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:19:23.088" level="INFO">Typing text 'Arman Cheyia' into text field 'xpath://*[@id="input-search"]'.</msg>
+<status status="PASS" starttime="20210802 00:19:23.087" endtime="20210802 00:19:23.308"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:25.320" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:23.308" endtime="20210802 00:19:25.320"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210802 00:19:25.320" endtime="20210802 00:19:25.370"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<arg>${filter_by_notExist_data}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210802 00:19:25.370" level="INFO">Typing text 'Software Engineering' into text field 'xpath://*[@id="input-search"]'.</msg>
+<status status="PASS" starttime="20210802 00:19:25.370" endtime="20210802 00:19:25.517"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:27.521" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:25.518" endtime="20210802 00:19:27.521"/>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<arg>${input_search}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20210802 00:19:27.522" endtime="20210802 00:19:27.614"/>
+</kw>
+<status status="PASS" starttime="20210802 00:19:15.644" endtime="20210802 00:19:27.615"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210802 00:19:30.623" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210802 00:19:27.616" endtime="20210802 00:19:30.623"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210802 00:19:30.625" endtime="20210802 00:19:32.966"/>
+</kw>
+<doc>This is to test list filter</doc>
+<tag>list</tag>
+<status status="PASS" starttime="20210802 00:19:07.011" endtime="20210802 00:19:32.968"/>
+</test>
+<doc>Testing List Filter</doc>
+<status status="PASS" starttime="20210802 00:19:06.577" endtime="20210802 00:19:32.975"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">list</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="List Filter">List Filter</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

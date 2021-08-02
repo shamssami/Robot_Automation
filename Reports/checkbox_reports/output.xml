@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20210726 10:09:44.286" rpa="false" schemaversion="2">
+<suite id="s1" name="Checkbox" source="C:\Users\Microsoft\PycharmProjects\MyTry\Test\TestSuite\checkbox.robot">
+<test id="s1-t1" name="TestCase1: check single checkbox">
+<kw name="Open checkbox Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210726 10:09:44.696" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210726 10:09:44.696" endtime="20210726 10:09:44.696"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${checkbox_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210726 10:09:44.697" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/basic-checkbox-demo.html'.</msg>
+<status status="PASS" starttime="20210726 10:09:44.696" endtime="20210726 10:09:57.558"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210726 10:09:57.558" endtime="20210726 10:09:57.791"/>
+</kw>
+<status status="PASS" starttime="20210726 10:09:44.695" endtime="20210726 10:09:57.791"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:10:02.807" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210726 10:09:57.792" endtime="20210726 10:10:02.808"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="Selenium2Library">
+<arg>${single_checkbox}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20210726 10:10:02.812" level="INFO">Verifying checkbox 'xpath://*[@id="isAgeSelected"]' is not selected.</msg>
+<status status="PASS" starttime="20210726 10:10:02.810" endtime="20210726 10:10:02.960"/>
+</kw>
+<kw name="Select Checkbox" library="Selenium2Library">
+<arg>${single_checkbox}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20210726 10:10:02.961" level="INFO">Selecting checkbox 'xpath://*[@id="isAgeSelected"]'.</msg>
+<status status="PASS" starttime="20210726 10:10:02.961" endtime="20210726 10:10:03.123"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:10:08.127" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210726 10:10:03.123" endtime="20210726 10:10:08.127"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210726 10:10:08.129" endtime="20210726 10:10:10.360"/>
+</kw>
+<doc>This is to verify checkbox is selected/checked</doc>
+<tag>single</tag>
+<status status="PASS" starttime="20210726 10:09:44.694" endtime="20210726 10:10:10.360"/>
+</test>
+<test id="s1-t2" name="TestCase2: check multiple checkboxes">
+<kw name="Open checkbox Selenium Website in Chrome" library="Keywords">
+<kw name="Log" library="BuiltIn">
+<arg>Open the URL in Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210726 10:10:10.367" level="INFO">Open the URL in Browser</msg>
+<status status="PASS" starttime="20210726 10:10:10.367" endtime="20210726 10:10:10.367"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${checkbox_url}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210726 10:10:10.367" level="INFO">Opening browser 'Chrome' to base url 'https://www.seleniumeasy.com/test/basic-checkbox-demo.html'.</msg>
+<status status="PASS" starttime="20210726 10:10:10.367" endtime="20210726 10:10:56.698"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210726 10:10:56.699" endtime="20210726 10:10:56.834"/>
+</kw>
+<status status="PASS" starttime="20210726 10:10:10.367" endtime="20210726 10:10:56.834"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:11:01.852" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210726 10:10:56.835" endtime="20210726 10:11:01.852"/>
+</kw>
+<kw name="Check if checkboxes are unchecked" library="Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:11:04.868" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210726 10:11:01.855" endtime="20210726 10:11:04.868"/>
+</kw>
+<kw name="Get WebElements" library="Selenium2Library">
+<var>${items}</var>
+<arg>${checkboxes}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20210726 10:11:04.939" level="INFO">${items} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="9fbfd678-8698-4356-a1e3-c43fab2b5823")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20210726 10:11:04.869" endtime="20210726 10:11:04.940"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{items}</value>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="9fbfd678-8698-4356-a1e3-c43fab2b5823")&gt;</var>
+<kw name="Checkbox Should Not Be Selected" library="Selenium2Library">
+<arg>${item}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20210726 10:11:04.942" level="INFO">Verifying checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="9fbfd678-8698-4356-a1e3-c43fab2b5823")&gt;' is not selected.</msg>
+<status status="PASS" starttime="20210726 10:11:04.941" endtime="20210726 10:11:04.974"/>
+</kw>
+<status status="PASS" starttime="20210726 10:11:04.941" endtime="20210726 10:11:04.974"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="bcb939d8-278f-425c-b8df-68b52d28c404")&gt;</var>
+<kw name="Checkbox Should Not Be Selected" library="Selenium2Library">
+<arg>${item}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20210726 10:11:04.975" level="INFO">Verifying checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="bcb939d8-278f-425c-b8df-68b52d28c404")&gt;' is not selected.</msg>
+<status status="PASS" starttime="20210726 10:11:04.975" endtime="20210726 10:11:04.993"/>
+</kw>
+<status status="PASS" starttime="20210726 10:11:04.975" endtime="20210726 10:11:04.993"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="39165feb-cb6d-4180-9dba-b1d2e0f7ec7f")&gt;</var>
+<kw name="Checkbox Should Not Be Selected" library="Selenium2Library">
+<arg>${item}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20210726 10:11:04.994" level="INFO">Verifying checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="39165feb-cb6d-4180-9dba-b1d2e0f7ec7f")&gt;' is not selected.</msg>
+<status status="PASS" starttime="20210726 10:11:04.994" endtime="20210726 10:11:05.009"/>
+</kw>
+<status status="PASS" starttime="20210726 10:11:04.993" endtime="20210726 10:11:05.009"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="634a04b0-40c2-439f-b0ad-cebca0958b52")&gt;</var>
+<kw name="Checkbox Should Not Be Selected" library="Selenium2Library">
+<arg>${item}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20210726 10:11:05.010" level="INFO">Verifying checkbox '&lt;selenium.webdriver.remote.webelement.WebElement (session="739b19a4ec01601db2f5491c93fd6177", element="634a04b0-40c2-439f-b0ad-cebca0958b52")&gt;' is not selected.</msg>
+<status status="PASS" starttime="20210726 10:11:05.009" endtime="20210726 10:11:05.024"/>
+</kw>
+<status status="PASS" starttime="20210726 10:11:05.009" endtime="20210726 10:11:05.024"/>
+</iter>
+<status status="PASS" starttime="20210726 10:11:04.940" endtime="20210726 10:11:05.024"/>
+</for>
+<status status="PASS" starttime="20210726 10:11:01.853" endtime="20210726 10:11:05.025"/>
+</kw>
+<kw name="Test check_all_button" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${checkall_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210726 10:11:05.027" level="INFO">Clicking element 'xpath://*[@id="check1"]'.</msg>
+<status status="PASS" starttime="20210726 10:11:05.026" endtime="20210726 10:11:05.137"/>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<var>${button_attribute1}</var>
+<arg>${checkall_button}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20210726 10:11:05.166" level="INFO">${button_attribute1} = Uncheck All</msg>
+<status status="PASS" starttime="20210726 10:11:05.138" endtime="20210726 10:11:05.167"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:11:08.169" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210726 10:11:05.167" endtime="20210726 10:11:08.170"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${checkbox1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210726 10:11:08.174" level="INFO">Clicking element 'xpath://*[@id="easycont"]/div/div[2]/div[2]/div[2]/div[1]/label/input'.</msg>
+<status status="PASS" starttime="20210726 10:11:08.171" endtime="20210726 10:11:08.294"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:11:12.298" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210726 10:11:08.294" endtime="20210726 10:11:12.299"/>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<var>${button_attribute2}</var>
+<arg>${checkall_button}</arg>
+<arg>attribute=value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20210726 10:11:12.345" level="INFO">${button_attribute2} = Check All</msg>
+<status status="PASS" starttime="20210726 10:11:12.302" endtime="20210726 10:11:12.345"/>
+</kw>
+<status status="PASS" starttime="20210726 10:11:05.026" endtime="20210726 10:11:12.345"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210726 10:11:17.357" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210726 10:11:12.346" endtime="20210726 10:11:17.358"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210726 10:11:17.360" endtime="20210726 10:11:19.568"/>
+</kw>
+<doc>This is to test checkboxes</doc>
+<tag>single</tag>
+<status status="PASS" starttime="20210726 10:10:10.367" endtime="20210726 10:11:19.570"/>
+</test>
+<doc>Testing MercuryTours Website</doc>
+<status status="PASS" starttime="20210726 10:09:44.288" endtime="20210726 10:11:19.577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">single</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Checkbox">Checkbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
